@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E7C509D-4E72-4E46-9BE5-43D52A73582D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SumTix</RootNamespace>
+    <AssemblyName>SumTix</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>df565993-5f8d-4209-a17f-7d72d3d8c8aa-removebg.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OleDb, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.OleDb.8.0.0\lib\net462\System.Data.OleDb.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="devamsizlik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="devamsizlik.Designer.cs">
+      <DependentUpon>devamsizlik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dgoruntuleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dgoruntuleme.Designer.cs">
+      <DependentUpon>dgoruntuleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="duzeltme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="duzeltme.Designer.cs">
+      <DependentUpon>duzeltme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="goruntuleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="goruntuleme.Designer.cs">
+      <DependentUpon>goruntuleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicilar.Designer.cs">
+      <DependentUpon>kullanicilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuhasebeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuhasebeForm.Designer.cs">
+      <DependentUpon>MuhasebeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odemeekleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odemeekleme.Designer.cs">
+      <DependentUpon>odemeekleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odemekaydi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odemekaydi.Designer.cs">
+      <DependentUpon>odemekaydi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YonetimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YonetimForm.Designer.cs">
+      <DependentUpon>YonetimForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="devamsizlik.resx">
+      <DependentUpon>devamsizlik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dgoruntuleme.resx">
+      <DependentUpon>dgoruntuleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="duzeltme.resx">
+      <DependentUpon>duzeltme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="goruntuleme.resx">
+      <DependentUpon>goruntuleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicilar.resx">
+      <DependentUpon>kullanicilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuhasebeForm.resx">
+      <DependentUpon>MuhasebeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odemeekleme.resx">
+      <DependentUpon>odemeekleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odemekaydi.resx">
+      <DependentUpon>odemekaydi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="YonetimForm.resx">
+      <DependentUpon>YonetimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="df565993-5f8d-4209-a17f-7d72d3d8c8aa-removebg.ico" />
+    <Content Include="WhatsApp-Görsel-2024-05-17-saat-21.32.38_35ae3c8f.ico" />
+    <Content Include="_df565993-5f8d-4209-a17f-7d72d3d8c8aa-removebg.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
